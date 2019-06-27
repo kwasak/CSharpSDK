@@ -335,6 +335,32 @@ namespace PlayFab.ProfilesModels
 
     }
 
+    /// <summary>
+    /// Given a master player account id (PlayFab ID), returns all title player accounts associated with it.
+    /// </summary>
+    public class GetTitlePlayersFromMasterPlayerAccountIdsRequest : PlayFabRequestCommon
+    {
+        /// <summary>
+        /// Master player account ids.
+        /// </summary>
+        public List<string> MasterPlayerAccountIds ;
+
+        /// <summary>
+        /// Id of title to get players from.
+        /// </summary>
+        public string TitleId ;
+
+    }
+
+    public class GetTitlePlayersFromMasterPlayerAccountIdsResponse : PlayFabResultCommon
+    {
+        /// <summary>
+        /// Dictionary of master player ids mapped to title player entity keys and id pairs
+        /// </summary>
+        public Dictionary<string,EntityKey> TitlePlayerAccounts ;
+
+    }
+
     public enum OperationTypes
     {
         Created,

@@ -456,6 +456,7 @@ namespace PlayFab
         EconomyServiceInternalError = 1451,
         QueryRateLimitExceeded = 1452,
         EntityAPIKeyCreationDisabledForEntity = 1453,
+        ForbiddenByEntityPolicy = 1454,
         StudioCreationRateLimited = 1456,
         StudioCreationInProgress = 1457,
         DuplicateStudioName = 1458,
@@ -528,7 +529,9 @@ namespace PlayFab
         ExportLimitExports = 5015,
         ExportLimitEvents = 5016,
         TitleNotEnabledForParty = 6000,
-        PartyVersionNotFound = 6001
+        PartyVersionNotFound = 6001,
+        MultiplayerServerBuildReferencedByMatchmakingQueue = 6002,
+        SnapshotNotFound = 11000
     }
 
     public class PlayFabError

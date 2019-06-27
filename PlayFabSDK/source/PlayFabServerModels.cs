@@ -1943,6 +1943,7 @@ namespace PlayFab.ServerModels
         EconomyServiceInternalError,
         QueryRateLimitExceeded,
         EntityAPIKeyCreationDisabledForEntity,
+        ForbiddenByEntityPolicy,
         StudioCreationRateLimited,
         StudioCreationInProgress,
         DuplicateStudioName,
@@ -2015,7 +2016,9 @@ namespace PlayFab.ServerModels
         ExportLimitExports,
         ExportLimitEvents,
         TitleNotEnabledForParty,
-        PartyVersionNotFound
+        PartyVersionNotFound,
+        MultiplayerServerBuildReferencedByMatchmakingQueue,
+        SnapshotNotFound
     }
 
     public class GenericPlayFabIdPair

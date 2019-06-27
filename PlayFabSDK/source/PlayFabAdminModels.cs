@@ -2190,6 +2190,7 @@ namespace PlayFab.AdminModels
         EconomyServiceInternalError,
         QueryRateLimitExceeded,
         EntityAPIKeyCreationDisabledForEntity,
+        ForbiddenByEntityPolicy,
         StudioCreationRateLimited,
         StudioCreationInProgress,
         DuplicateStudioName,
@@ -2262,7 +2263,9 @@ namespace PlayFab.AdminModels
         ExportLimitExports,
         ExportLimitEvents,
         TitleNotEnabledForParty,
-        PartyVersionNotFound
+        PartyVersionNotFound,
+        MultiplayerServerBuildReferencedByMatchmakingQueue,
+        SnapshotNotFound
     }
 
     public class GetActionsOnPlayersInSegmentTaskInstanceResult : PlayFabResultCommon
